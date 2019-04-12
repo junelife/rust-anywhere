@@ -1,0 +1,14 @@
+[package]
+name = "board"
+version = "0.1.0"
+authors = ["junelife"]
+edition = "2018"
+
+[dependencies]
+cortex-m = "0.5.8"
+embedded-hal = "0.2.2"
+
+[dependencies.stm32f4xx-hal]
+default-features = false
+features = ["stm32f429"]
+version = "0.3.0"

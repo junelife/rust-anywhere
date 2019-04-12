@@ -1,0 +1,9 @@
+[package]
+name = "lvgl"
+version = "0.1.0"
+authors = ["junelife"]
+edition = "2018"
+
+[dependencies]
+ffi = { path = "../ffi" }
+lvgl-sys = { path = "lvgl-sys" }

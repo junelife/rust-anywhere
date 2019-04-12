@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C49218EC22668B19002953AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49218EB22668B19002953AF /* AppDelegate.swift */; };
+		C49218EE22668B19002953AF /* SimulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49218ED22668B19002953AF /* SimulatorViewController.swift */; };
+		C49218F022668B1B002953AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49218EF22668B1B002953AF /* Assets.xcassets */; };
+		C49218F322668B1B002953AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49218F122668B1B002953AF /* Main.storyboard */; };
+		C49218FC22668BC2002953AF /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49218FB22668BC2002953AF /* Simulator.swift */; };
+		C492190022669426002953AF /* liblibsimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C49218FF22669426002953AF /* liblibsimulator.a */; };
+		C492190322669BEE002953AF /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492190222669BEE002953AF /* DisplayViewController.swift */; };
+		C492190522669C0D002953AF /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C492190422669C0D002953AF /* Shaders.metal */; };
+		C4F4CACC2269425B003780BC /* LEDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F4CACB2269425B003780BC /* LEDView.swift */; };
+		C4F4CACE226950D1003780BC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F4CACD226950D1003780BC /* ButtonView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C49218E822668B19002953AF /* RustAnywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustAnywhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49218EB22668B19002953AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C49218ED22668B19002953AF /* SimulatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewController.swift; sourceTree = "<group>"; };
+		C49218EF22668B1B002953AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C49218F222668B1B002953AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C49218F422668B1B002953AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49218F522668B1B002953AF /* RustAnywhere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RustAnywhere.entitlements; sourceTree = "<group>"; };
+		C49218FB22668BC2002953AF /* Simulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
+		C49218FD22669169002953AF /* RustAnywhere-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RustAnywhere-Bridging-Header.h"; sourceTree = "<group>"; };
+		C49218FF22669426002953AF /* liblibsimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibsimulator.a; path = ../crates/target/debug/liblibsimulator.a; sourceTree = "<group>"; };
+		C492190222669BEE002953AF /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		C492190422669C0D002953AF /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		C4F4CACB2269425B003780BC /* LEDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDView.swift; sourceTree = "<group>"; };
+		C4F4CACD226950D1003780BC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		D8B05538227257420050F70D /* crates */ = {isa = PBXFileReference; lastKnownFileType = folder; name = crates; path = ../crates; sourceTree = "<group>"; };
+		D8B05539227257510050F70D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C49218E522668B19002953AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C492190022669426002953AF /* liblibsimulator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C49218DF22668B19002953AF = {
+			isa = PBXGroup;
+			children = (
+				C49218EA22668B19002953AF /* RustAnywhere */,
+				C49218FE22669425002953AF /* Frameworks */,
+				C49218E922668B19002953AF /* Products */,
+				D8B05538227257420050F70D /* crates */,
+				D8B05539227257510050F70D /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		C49218E922668B19002953AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C49218E822668B19002953AF /* RustAnywhere.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C49218EA22668B19002953AF /* RustAnywhere */ = {
+			isa = PBXGroup;
+			children = (
+				C49218F522668B1B002953AF /* RustAnywhere.entitlements */,
+				C49218FD22669169002953AF /* RustAnywhere-Bridging-Header.h */,
+				C492190422669C0D002953AF /* Shaders.metal */,
+				C49218F422668B1B002953AF /* Info.plist */,
+				C49218EB22668B19002953AF /* AppDelegate.swift */,
+				C4F4CACD226950D1003780BC /* ButtonView.swift */,
+				C492190222669BEE002953AF /* DisplayViewController.swift */,
+				C4F4CACB2269425B003780BC /* LEDView.swift */,
+				C49218FB22668BC2002953AF /* Simulator.swift */,
+				C49218ED22668B19002953AF /* SimulatorViewController.swift */,
+				C49218EF22668B1B002953AF /* Assets.xcassets */,
+				C49218F122668B1B002953AF /* Main.storyboard */,
+			);
+			path = RustAnywhere;
+			sourceTree = "<group>";
+		};
+		C49218FE22669425002953AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C49218FF22669426002953AF /* liblibsimulator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C49218E722668B19002953AF /* RustAnywhere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49218F822668B1B002953AF /* Build configuration list for PBXNativeTarget "RustAnywhere" */;
+			buildPhases = (
+				C4921901226694C8002953AF /* Build Rust Library */,
+				C49218E422668B19002953AF /* Sources */,
+				C49218E522668B19002953AF /* Frameworks */,
+				C49218E622668B19002953AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RustAnywhere;
+			productName = RustAnywhere;
+			productReference = C49218E822668B19002953AF /* RustAnywhere.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C49218E022668B19002953AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "June Life";
+				TargetAttributes = {
+					C49218E722668B19002953AF = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = C49218E322668B19002953AF /* Build configuration list for PBXProject "RustAnywhere" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C49218DF22668B19002953AF;
+			productRefGroup = C49218E922668B19002953AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C49218E722668B19002953AF /* RustAnywhere */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C49218E622668B19002953AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49218F022668B1B002953AF /* Assets.xcassets in Resources */,
+				C49218F322668B1B002953AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4921901226694C8002953AF /* Build Rust Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Library";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "#!/bin/bash\n\n# This script will build the necessary Rust libraries for the simulator\n# part of the Xcode project build.\n\nset -x\nset -o nounset\nset -o errexit\nset -o pipefail\n\n# Find cargo in the user's home directory.\nCARGO=\"$HOME/.cargo/bin/cargo\"\n\n# Or try to find it in $PATH.\nif [ ! -f \"$CARGO\" ]; then\n    CARGO=`which cargo`\nfi\n\n# Make sure cargo is installed.\nif [ -f \"$CARGO\" ]; then\n    echo \"Using cargo binary: $CARGO\"\nelse\n    echo \"No cargo binary found\"\n    exit 1\nfi\n\n# Select either the debug or release version.\nARGS=\"\"\nif [ $CONFIGURATION == \"Release\" ]; then\n    ARGS=\"--release\"\nfi\n\n# Build the Rust library.\npushd $SRCROOT/../crates/libsimulator\n$CARGO build $ARGS\npopd\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C49218E422668B19002953AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49218EE22668B19002953AF /* SimulatorViewController.swift in Sources */,
+				C49218EC22668B19002953AF /* AppDelegate.swift in Sources */,
+				C4F4CACC2269425B003780BC /* LEDView.swift in Sources */,
+				C49218FC22668BC2002953AF /* Simulator.swift in Sources */,
+				C492190322669BEE002953AF /* DisplayViewController.swift in Sources */,
+				C492190522669C0D002953AF /* Shaders.metal in Sources */,
+				C4F4CACE226950D1003780BC /* ButtonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C49218F122668B1B002953AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C49218F222668B1B002953AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C49218F622668B1B002953AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C49218F722668B1B002953AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C49218F922668B1B002953AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RustAnywhere/RustAnywhere.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 68C9FM8YKZ;
+				HEADER_SEARCH_PATHS = (
+					../crates/api/include,
+					"../crates/lvgl/lvgl-sys",
+					"../crates/lvgl/lvgl-sys/lvgl",
+				);
+				INFOPLIST_FILE = RustAnywhere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = ../crates/target/debug;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junelife.RustAnywhere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustAnywhere/RustAnywhere-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C49218FA22668B1B002953AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RustAnywhere/RustAnywhere.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 68C9FM8YKZ;
+				HEADER_SEARCH_PATHS = (
+					../crates/api/include,
+					"../crates/lvgl/lvgl-sys",
+					"../crates/lvgl/lvgl-sys/lvgl",
+				);
+				INFOPLIST_FILE = RustAnywhere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = ../crates/target/release;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junelife.RustAnywhere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustAnywhere/RustAnywhere-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C49218E322668B19002953AF /* Build configuration list for PBXProject "RustAnywhere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49218F622668B1B002953AF /* Debug */,
+				C49218F722668B1B002953AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C49218F822668B1B002953AF /* Build configuration list for PBXNativeTarget "RustAnywhere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49218F922668B1B002953AF /* Debug */,
+				C49218FA22668B1B002953AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C49218E022668B19002953AF /* Project object */;
+}

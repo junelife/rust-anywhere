@@ -1,0 +1,9 @@
+[package]
+name = "hmi"
+version = "0.1.0"
+authors = ["junelife"]
+edition = "2018"
+
+[dependencies]
+api = { path = "../api" }
+lvgl = { path = "../lvgl" }

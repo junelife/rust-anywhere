@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "api",
+    "board",
+    "drivers",
+    "ffi",
+    "hmi",
+    "libdevice",
+    "libsimulator",
+    "lvgl",
+]
+
+[profile.release]
+debug = true
+lto = true

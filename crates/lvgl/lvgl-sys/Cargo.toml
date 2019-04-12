@@ -1,0 +1,13 @@
+[package]
+name = "lvgl-sys"
+version = "0.1.0"
+authors = ["junelife"]
+edition = "2018"
+links = "lvgl"
+
+[dependencies]
+ffi = { path="../../ffi" }
+
+[build-dependencies]
+bindgen = "0.47.1"
+

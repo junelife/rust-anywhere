@@ -1,0 +1,9 @@
+[package]
+name = "drivers"
+version = "0.1.0"
+authors = ["junelife"]
+edition = "2018"
+
+[dependencies]
+api = { path = "../api" }
+board = { path = "../board" }

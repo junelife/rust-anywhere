@@ -1,0 +1,13 @@
+[package]
+name = "libsimulator"
+version = "0.1.0"
+authors = ["junelife"]
+edition = "2018"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+hmi = { path = "../hmi" }
+lvgl = { path = "../lvgl" }
+

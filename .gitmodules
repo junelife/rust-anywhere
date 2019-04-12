@@ -1,0 +1,3 @@
+[submodule "crates/lvgl/lvgl-sys/lvgl"]
+	path = crates/lvgl/lvgl-sys/lvgl
+	url = https://github.com/littlevgl/lvgl.git
